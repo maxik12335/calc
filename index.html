@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Math</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Mathematical operations</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="calculator">
+        <h2 class="calculator__title">Calculator</h2>
+        <form class="calculator__form">
+          <input type="text" class="calculator__result" disabled>
+          <div class="calculator__items">
+            <div class="calculator__item">1</div>
+            <div class="calculator__item">2</div>
+            <div class="calculator__item">3</div>
+            <div class="calculator__item">4</div>
+            <div class="calculator__item">5</div>
+            <div class="calculator__item">6</div>
+            <div class="calculator__item">7</div>
+            <div class="calculator__item">8</div>
+            <div class="calculator__item">9</div>
+            <div class="calculator__item">0</div>
+          </div>
+          <button type="submit" class="calculator__submit">Рассчитать</button>
+
+          <div class="math">
+            <div class="math__operation">+</div>
+            <div class="math__operation">-</div>
+            <div class="math__operation">/</div>
+            <div class="math__operation">*</div>
+          </div>
+
+          <div class="option">
+            <div class="option__delete">delete</div>
+          </div>
+
+          <div class="option-all">
+            <div class="option__delete">delete all</div>
+          </div>
+        </form>
+      </div>
+      <div class="result">
+        <h2 class="result__title">Вычисления</h2>
+        <button class="result__button-clean">Очистить</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts/math.js"></script>
+</body>
+</html>

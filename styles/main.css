@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3 {
+  margin: 0;
+}
+
+input,
+input:focus {
+  outline: none;
+  border: none;
+  border: 1px solid black;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+  position: relative;
+}
+
+.header__title {
+  text-align: center;
+  margin: 20px;
+}
+
+.calculator__form {
+  position: relative;
+}
+
+.math {
+  position: absolute;
+  top: -5px;
+  right: -40px;
+}
+
+.math__operation {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calculator__title {
+  text-align: center;
+}
+
+.calculator__result {
+  display: block;
+  width: 470px;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+.calculator__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.calculator__item {
+  width: 30%;
+  border: 1px solid;
+  padding: 5px;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.calculator__submit {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.option {
+  position: absolute;
+  top: -45px;
+  right: 11px;
+}
+
+.option-all {
+  position: absolute;
+  top: -45px;
+  left: 11px;
+}
+
+.option__delete {
+  width: fit-content;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 30px;
+}
+
+.option__delete:hover,
+.math__operation:hover,
+.calculator__item:hover,
+.calculator__submit:hover {
+  /* background-color: rgb(247, 244, 244); */
+  background-color: #f2f2f2;
+}
+
+.result {
+  padding: 10px;
+  border: 1px solid;
+  text-align: left;
+  text-align: center;
+  width: 300px;
+  position: absolute;
+  left: 600px;
+  top: 40px;
+  display: none
+}
+
+.result-show {
+  display: block;
+}
+
+.result__title {
+  font-size: 20px;
+}
+
+.result__item {
+  margin: 10px 0;
+}
+
+.result__button-clean {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -60px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
